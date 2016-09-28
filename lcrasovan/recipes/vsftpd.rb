@@ -43,7 +43,12 @@ node.default['vsftpd']['config'] = {
     'use_localtime'               => 'YES',
     'secure_chroot_dir'           => '/var/run/vsftpd/empty',
     'rsa_cert_file'               => '/etc/ssl/private/vsftpd.pem',
-    'passwd_chroot_enable'        => 'YES'
+    'passwd_chroot_enable'        => 'YES',
+    'anonymous_enable'            => 'NO',
+    'local_umask'                 =>  '0133',
+    'anon_upload_enable'          =>  'YES',
+    'anon_mkdir_write_enable'     =>  'YES',
+    'file_open_mode'              =>  '0777'
 }
 
 # create ftp user group
