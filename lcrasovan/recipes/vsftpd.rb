@@ -4,9 +4,9 @@ node.default['vsftpd']['enabled'] = true
 # Configuration directory of vsftpd
 node.default['vsftpd']['etcdir'] = '/etc/vsftpd'
 
-ftpUsername = 'ftpUser'
+ftpUsername = 'ftpUserName'
 hashedPasword = `openssl passwd -1 "yourspecialpassword"`
-groupId = 2016
+groupId = 'youGroupId'
 groupName = ftpUsername
 
 # Home necomplus user directory
